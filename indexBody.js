@@ -5,11 +5,11 @@
 			pi2 = Math.PI*200,
 			random = t=>Math.random()*t,
 			binRandom = (f)=>Math.random()<f,
-			arr = new Array(500).fill().map((p)=>{
+			arr = new Array(200).fill().map((p)=>{
 				return {
 					p: {x: random(w), y: random(h)},
 					v: {x: random(.5) * (binRandom(.5)?1:-1), y: random(.5) * (binRandom(.5)?1:-1)},
-					s: random(110)+2, 
+					s: random(150)+2, 
 					o: random(1)+.3
 				}
 			});
