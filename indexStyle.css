@@ -11,24 +11,31 @@ body {
 	left:0;
 	position: absolute;
 }
-#selection {
-	position: relative;
+p {
+	position: absolute;
+	display: block;
+	z-index: 3;
 	cursor: pointer;
-	font-size: 40pt;
+	font-size: 58pt;
 	display:block;
-	text-align:center; 
-	top:50%;
+	text-align:center;
+	font-family: 'Helvetica Neue';
+	letter-spacing: 2px;
+	top:47%;
 	left:50%;
-	margin: -35px 0px 0px -400px;
 	color:white;
-	width: 800px;
+	width: 1600px;
 	height: 70px;
 }
-
+.selectionA{margin: -35px 0px 0px -800px;}
+.selectionB{
+	font-size:28pt;
+	margin: 55px 0px 0px -800px;
+}
 #c {
 	position: absolute;
 	z-index: 1;
-	filter:blur(20px);
+	filter:blur(30px);
 	top:0;
 	left:0;
 	background-color: transparent;

@@ -1,7 +1,7 @@
 var colors = new Array(
   [0,0,0],
-  [50,50,50],
   [150,150,150],
+  [50,50,50],
   [200,200,200]);
 
 var step = 0;
@@ -10,10 +10,10 @@ var step = 0;
 // next color left
 // current color right
 // next color right
-var colorIndices = [0,3,2,3];
+var colorIndices = [0,1,2,3];
 
 //transition speed
-var gradientSpeed = 0.002;
+var gradientSpeed = 0.00002;
 
 function updateGradient()
 {
@@ -60,22 +60,22 @@ setInterval(updateGradient,1);
 	
 	let $ = c.getContext('2d'),
 			w = c.width = window.innerWidth,
-			h = c.height = (window.innerHeight)/4,
+			h = c.height = window.innerHeight,
 			pi2 = Math.PI*200,
 			random = t=>Math.random()*t,
 			binRandom = (f)=>Math.random()<f,
-			arr = new Array(10).fill().map((p)=>{
+			arr = new Array(300).fill().map((p)=>{
 				return {
 					p: {x: random(w), y: random(h)},
-					v: {x: random(.5) * (binRandom(.5)?1:-1), y: random(.5) * (binRandom(.5)?1:-1)},
-					s: random(500)+2, 
-					o: random(10)+.3
+					v: {x: random(.9) * (binRandom(.5)?1:-1), y: random(.1) * (binRandom(.5)?1:-1)},
+					s: random(10)+2, 
+					o: random(1)+.3
 				}
 			});
 	function draw(){
 		(h !== innerHeight || w!==innerWidth) && (w=c.width=innerWidth,h=c.height=innerHeight);
 		$.fillStyle="rgba(0,0,0,0.4)"
-		$.fillRect(0,0,w,h/2);
+		$.fillRect(0,0,w,h);
 		arr.forEach(p=>{
 			p.p.x+=p.v.x;
 			p.p.y+=p.v.y;
