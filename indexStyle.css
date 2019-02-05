@@ -25,13 +25,13 @@ p {
 	top:47%;
 	left:50%;
 	color:white;
-	width: 1600px;
+	width: 1200px;
 	height: 70px;
 }
-.selectionA{margin: -35px 0px 0px -800px;}
+.selectionA{margin: -35px 0px 0px -600px;}
 .selectionB{
 	font-size:28pt;
-	margin: 55px 0px 0px -800px;
+	margin: 55px 0px 0px -600px;
 }
 #c {
 	position: absolute;
