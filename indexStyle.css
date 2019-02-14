@@ -1,12 +1,14 @@
 body {
 	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #selectionWrapper {
 	display: block;
-	z-index: 2;
+	z-index: 1;
 	width: 100%;
 	height: 100%;
-	opacity: 0.6;
+	opacity: 0.2;
 	top:0;
 	left:0;
 	position: absolute;
@@ -16,28 +18,36 @@ p {
 	display: block;
 	z-index: 3;
 	cursor: pointer;
-	font-size: 58pt;
+	font-size: 68pt;
 	display:block;
 	text-align:center;
-	font-weight: 800;
-	font-family: 'HelveticaNeue-Thin';
+	font-family: 'Helvetica Neue';
 	letter-spacing: 2px;
-	top:47%;
+	top:40%;
 	left:50%;
 	color:white;
-	width: 1200px;
+	width: 800px;
 	height: 70px;
 }
-.selectionA{margin: -35px 0px 0px -600px;}
+.selectionA{margin: -35px 0px 0px -400px;}
 .selectionB{
-	font-size:28pt;
-	margin: 55px 0px 0px -600px;
+	font-size:38pt;
+	margin: 60px 0px 0px -400px;
 }
 #c {
 	position: absolute;
-	z-index: 1;
+	z-index:1;
 	filter:blur(30px);
 	top:0;
 	left:0;
 	background-color: transparent;
+}
+#manifesto {
+	text-align:justify;
+	top:50%;
+	margin-left: -360px;
+}
+#manifesto1 {
+	top:80%;
+	margin-left: -360px;
 }
