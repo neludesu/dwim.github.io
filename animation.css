@@ -1,0 +1,121 @@
+@keyframes centerImage2Fade1 {
+	from{opacity: 1;}
+	16%{opacity: 1;}
+	25%{ opacity: 0; }
+    91%{ opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes centerImage2Fade2 {
+	from    { opacity: 0; }
+    16%     { opacity: 0; }
+    25%     { opacity: 1; }
+    41%     { opacity: 1; }
+    50%     { opacity: 0; }
+    to      { opacity: 0; }
+}
+@keyframes centerImage2Fade3 {
+	from    { opacity: 0; }
+    41%     { opacity: 0; }
+    50%     { opacity: 1; }
+    66%     { opacity: 1; }
+    75%     { opacity: 0; }
+    to      { opacity: 0; }
+}
+@keyframes centerImage2Fade4{
+    from    { opacity: 0; }
+    66%     { opacity: 0; }
+    75%     { opacity: 1; }
+    91%     { opacity: 1; }
+    to      { opacity: 0; }
+}
+.img-style {
+	animation-duration: 36s;
+    animation-iteration-count: infinite;
+}
+.img-style.next {
+	opacity: 0;
+}
+.img-style.im-1 {
+	animation-name:centerImage2Fade1; 
+}
+.img-style.next.im-2 {
+	animation-name: centerImage2Fade2;
+}
+.img-style.next.im-3 {
+	animation-name: centerImage2Fade3;
+}
+.img-style.next.im-4 {
+	animation-name: centerImage2Fade4;
+}
+.img-style2 {
+	animation-duration: 49s;
+	animation-iteration-count: infinite;  
+}
+.img-style2.next {
+	opacity:0; 
+}
+.img-style2.next.im-2 {
+	animation-name: centerImage2Fade2;
+}
+.img-style2.next.im-3 {
+	animation-name: centerImage2Fade3;
+}
+.img-style2.next.im-4 {
+	animation-name: centerImage2Fade4;
+}
+.img-style3 {
+	animation-duration: 24s;
+	animation-iteration-count: infinite;  
+}
+.img-style3.next {
+	opacity:0; 
+}
+.img-style3.next.im-2 {
+	animation-name: centerImage2Fade2;
+}
+.img-style3.next.im-3 {
+	animation-name: centerImage2Fade3;
+}
+.img-style3.next.im-4 {
+	animation-name: centerImage2Fade4;
+}
+
+.img-style4 {
+	animation-duration: 20s;
+	animation-iteration-count: infinite;  
+}
+.img-style4.next {
+	opacity:0; 
+}
+.img-style4.next.im-2 {
+	animation-name: centerImage2Fade2;
+}
+.img-style4.next.im-3 {
+	animation-name: centerImage2Fade3;
+}
+.img-style4.next.im-4 {
+	animation-name: centerImage2Fade4;
+}
+
+
+
+.img-style5 {
+	animation-duration: 40s;
+	animation-iteration-count: infinite;  
+}
+.img-style5.next {
+	opacity:0; 
+}
+.img-style5.next.im-2 {
+	animation-name: centerImage2Fade2;
+}
+.img-style5.next.im-3 {
+	animation-name: centerImage2Fade3;
+}
+.img-style5.next.im-4 {
+	animation-name: centerImage2Fade4;
+}
+
+
+
+

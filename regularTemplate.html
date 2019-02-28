@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DWIM</title>
+	<link rel="stylesheet" type="text/css" href="regularTemplate.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/Groject.js"></script>
+	<script type="text/javascript" src="scripts/jQuery.scrollSpeed.js"></script>
+	<style type="text/css">
+		@import url(animation.css);
+	</style>
+</head>
+<body>
+	<div id="scroll-wrapper">
+		<div id="first">
+			<p class="caption" onclick=vanish();>REI KAWAKUBO</p>
+			<p class="fashion-house" onclick=release();>COMME des GARCONS</p>
+		</div>
+		<p class="regularText"> &nbsp;<br> Rei Kawakubo has a theory. <br>It has to do with filling space and emptying it.<br> “The void is important,” says the founder of <br>Commes des Garçons.<br>Kawakubo’s stark designs, generally done in<br> gray and black<br> reflect this philosophy, taking simplicity to<br>its final resolution in<br> fashion, furniture, and interior decoration. </p>
+		<p class="regularText">&nbsp; <br> &nbsp; <br>  &nbsp; <br>Rather than embellish fabrics,<br>Kawakubo will cut holes in them.<br>Rather than polishing materials,<br>she leaves their surfaces rough.</p>
+		<p class="regularText">&nbsp; <br>Born 43 years ago in Tokyo, Kawakubo began<br>Comme des Garçons in 1973,<br>after studying textile manufacture and working as <br>a freelance stylist.<br>Beginning with womenswear, <br>she established the Homme menswear collection <br>five years later, and now shows all of her lines <br>twice a year in Paris.</p>
+		<p class="regularText">&nbsp; <br> &nbsp; <br>“I want something that can be <br>crumpled and squeezed <br>into one’s bag by day,<br> unrumpled and worn at night,” <br>says the designer.<br> “Without makeup.”</p>
+	</div>
+	<div class="center-wrapper">
+		<div class="center-image-1">
+			<img src="images/CDG3.jpg" class="img-style2 im-1">
+			<img src="images/CDG11.jpg" style="left:-100%;" class="img-style2 next im-2">
+			<img src="images/black.png" style="left:-200%;" class="img-style2 next im-3">
+			<img src="images/CDG12.jpg" style="left:-300%;" class="img-style2 next im-4">
+		</div>
+		<div class="center-image-2">
+			<img src="images/CDG7.jpg" class="img-style im-1">
+			<img src="images/black.png" style="left:-100%" class="img-style next im-2">
+			<img src="images/CDG10.jpg" style='left: -200%' class="img-style next im-3">
+			<img src="images/CDG9.jpg" style="left:-300%;" class="img-style next im-4">
+		</div>
+		<div class="center-image-3">
+			<img src="images/CDG6.jpg" class="img-style3 im-1">
+			<img src="images/CDG14.jpg" style="left:-100%" class="img-style3 next im-2">
+			<img src="images/black.png" style="left:-200%" class="img-style3 next im-3">
+			<img src="images/CDG13.jpg" style="left:-300%" class="img-style3 next im-4">
+		</div>
+		<div class="center-image-4">
+			<img src="images/black.png" class="img-style4 im-1">
+			<img src="images/CDG4.jpg" style="left:-100%" class="img-style4 next im-2">
+			<img src="images/CDG15.jpg" style="left:-200%" class="img-style4 next im-3">
+			<img src="images/CDG16.jpg" style="left:-300%" class="img-style4 next im-4">
+		</div>
+		<div class="center-image-5">
+			<img src="images/CDG8.png" class="img-style5 im-1">
+			<img src="images/black.png" style="left:-100%" class="img-style5 next im-2">
+			<img src="images/CDG17.jpg" style="left:-200%" class="img-style5 next im-3">
+			<img src="images/background-image0.jpg" style="left:-300%" class="img-style5 next im-4">
+		</div>
+	</div>
+	<script type="text/javascript">
+		function vanish() {
+			$('img').fadeOut(900);
+			$("#textBg").css('display', 'block');
+		}
+		function release(){
+			$('img').fadeIn(900);
+		}
+		$(function(){$.scrollSpeed(200, 1800);});
+
+
+		
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
