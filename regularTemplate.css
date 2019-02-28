@@ -3,7 +3,7 @@ body {
 	padding:0;
 	background-image: url(images/12.gif);
 	background-size: cover;
-	background-color: black;
+	background-color: white;
 	background-attachment: fixed;
 	overflow: scroll;
 }
